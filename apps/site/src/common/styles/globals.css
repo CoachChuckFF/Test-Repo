@@ -1,0 +1,101 @@
+html {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  @apply text-skin-base;
+  @apply bg-skin-fill;
+  @apply font-objective;
+}
+
+html,
+.gradientBackground {
+  background-color: hsla(0, 0%, 0%, 1);
+  background-image: radial-gradient(
+      at 0% 24%,
+      hsla(240, 32%, 23%, 0.5) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 0% 100%, hsla(240, 32%, 23%, 0.64) 0px, transparent 50%),
+    radial-gradient(at 51% 0%, hsla(240, 32%, 23%, 1) 0px, transparent 50%),
+    radial-gradient(
+      at 100% 100%,
+      hsla(240, 32%, 23%, 0.67) 0px,
+      transparent 50%
+    );
+}
+
+@font-face {
+  font-family: "Objective";
+  src: url("../../../public/fonts/Objective-Regular.otf");
+}
+
+@layer base {
+  /* Core Components */
+  h1 {
+    line-height: 48px;
+    @apply text-skin-base font-bold text-5xl;
+  }
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    /* font-family: "Objective"; */
+    line-height: 48px;
+    @apply text-skin-base;
+  }
+
+  /* Roots */
+  :root {
+    --color-text-base: 255, 255, 255; /* #ffffff */
+    --color-text-muted: 194, 202, 255; /* #c2caf5 */
+    --color-text-inverted: 57, 74, 136; /* #39474c */
+    --color-fill: 0, 4, 34; /* #000414 */
+    --color-button-accent: 56, 54, 86; /* #383656 */
+    --color-button-accent-hover: 95, 112, 255; /* #5F70FF */
+    --color-button-muted: 147, 156, 227; /* #929ce3 */
+  }
+  .theme-neon {
+    --color-text-base: 17, 24, 2; /* #111802 */
+    --color-text-muted: 47, 67, 6; /* #2f4306 */
+    --color-text-inverted: 235, 250, 204; /* #ebeac4 */
+    --color-fill: 179, 255, 23; /* #b3ff17 */
+    --color-button-accent: 36, 52, 3; /* #243403 */
+    --color-button-accent-hover: 55, 79, 5; /* #374905 */
+    --color-button-muted: 212, 255, 122; /* #d4ff7a */
+  }
+
+  /* Classes */
+  .btn {
+    @apply text-skin-base bg-skin-button-accent hover:bg-skin-button-accent-hover flex items-center justify-center px-4 py-3 border border-transparent text-xs font-medium rounded-md shadow-sm sm:px-8;
+  }
+}
+
+.hex img {
+  -webkit-clip-path: polygon(
+    30% 0%,
+    70% 0%,
+    100% 30%,
+    100% 70%,
+    70% 100%,
+    30% 100%,
+    0% 70%,
+    0% 30%
+  );
+
+  clip-path: polygon(
+    30% 0%,
+    70% 0%,
+    100% 30%,
+    100% 70%,
+    70% 100%,
+    30% 100%,
+    0% 70%,
+    0% 30% inset(0% 45% 0% 45% round 10px)
+  );
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

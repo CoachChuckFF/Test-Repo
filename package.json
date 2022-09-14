@@ -1,0 +1,24 @@
+{
+    "name": "excalibur",
+    "version": "0.0.0",
+    "private": true,
+    "workspaces": [
+        "apps/*",
+        "packages/*"
+    ],
+    "scripts": {
+        "fullclean": "rm -rf node_modules ; yarn install",
+        "clean": "turbo run clean",
+        "build": "turbo run build ",
+        "test": "turbo run test",
+        "lint": "turbo run lint",
+        "deploy": "turbo run deploy",
+        "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    },
+    "devDependencies": {
+        "eslint-config-custom": "*",
+        "prettier": "latest",
+        "turbo": "latest"
+    },
+    "packageManager": "yarn@1.22.19"
+}

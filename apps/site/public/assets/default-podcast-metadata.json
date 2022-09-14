@@ -1,0 +1,17 @@
+{
+    "name": "An Excalibur Podcast",
+    "symbol": "EXCAL-POD",
+    "description": "Excalibur: Podcasting - Democratised - Decentralised",
+    "seller_fee_basis_points": 0,
+    "image": "https://shdw-drive.genesysgo.net/F987A8YCU49UWz3V2CfHf7N1QQKcsDmtUuGYHKTwTtHm/default-podcast-thumbnail.png",
+    "external_url": "https://excal.tv",
+    "properties": {
+        "files": [
+            {
+                "uri": "https://shdw-drive.genesysgo.net/F987A8YCU49UWz3V2CfHf7N1QQKcsDmtUuGYHKTwTtHm/default-podcast-thumbnail.png",
+                "type": "image/png"
+            }
+        ],
+        "category": "podcast"
+    }
+}

@@ -1,0 +1,18 @@
+{
+  "extends": "@excalibur/config/ts/nextjs.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@components/*": ["src/common/components/*"],
+      "@providers/*": ["src/common/providers/*"],
+      "@models/*": ["src/common/models/*"],
+      "@styles/*": ["src/common/styles/*"],
+      "@modules/*": ["src/modules/*"],
+      "@content/*": ["src/content/*"],
+      "@excalibur/wallet/*": ["../../packages/wallet/src/*"],
+      "@excalibur/wallet": ["../../packages/wallet/src/index"],
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"]
+}

@@ -1,0 +1,12 @@
+pub mod contribute_to_media_instruction;
+pub mod contribute_to_user_instruction;
+pub mod create_affiliate_instruction;
+pub mod create_media_instruction;
+pub mod create_user_instruction;
+pub mod distribute_to_community_wallet_from_media_instruction;
+pub mod distribute_to_community_wallet_from_user_instruction;
+pub mod distribute_to_user_instruction;
+pub mod distribute_to_workers_instruction;
+pub mod edit_metadata_instruction;
+pub mod print_sft_from_contributor_instruction;
+pub mod print_sft_from_creator_instruction;

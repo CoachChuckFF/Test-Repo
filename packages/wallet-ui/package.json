@@ -1,0 +1,16 @@
+{
+    "name": "@excalibur/wallet-ui",
+    "version": "1.0.0",
+    "description": "An image based wallet UI",
+    "author": "The Excalibur Foundation",
+    "license": "MIT",
+    "main": "./src/index.ts",
+    "types": "./src/index.ts",
+    "scripts": {
+        "build": "echo TODO create build",
+        "test": "echo TODO create tests",
+        "lint": "echo TODO create lint",
+        "clean": "rm -rf .turbo ; rm -rf node_modules ; rm yarn.lock ; yarn install ; echo done"
+    },
+    "dependencies": {}
+}
